@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MBT55 Hypercycle Output Interface",
+  "description": "Data structure provided by M3-Core-Engine to PBPE-Finance and HealthBook-AI. All values require IPCC Tier 2 traceability.",
+  "type": "object",
+  "properties": {
+    "soil_n2o_suppression_factor": {
+      "type": "number",
+      "description": "kg N2O suppressed per kg MBT55 per hectare per day",
+      "default": 0.0008,
+      "evidence_source": "PENDING — requires field measurement data"
+    },
+    "enteric_ch4_reduction_factor": {
+      "type": "number",
+      "description": "kg CH4 reduced per kg MBT55 in feed per day",
+      "default": 0.012,
+      "evidence_source": "PENDING — ref: evidence/video-proof/05-livestock-production/"
+    },
+    "fermentation_time_to_humus": {
+      "type": "number",
+      "description": "Hours required to reach complete humification",
+      "default": 24,
+      "evidence_source": "Observed: https://youtu.be/bVRBk0ixNjI (24h fermentation demo)"
+    },
+    "butyrate_yield_in_gut": {
+      "type": "number",
+      "description": "Estimated mmol/L butyrate increase per g MBT Probiotics",
+      "default": 2.5,
+      "evidence_source": "PENDING — requires in-vitro fermentation assay"
+    },
+    "ph_stable_range_min": {
+      "type": "number",
+      "description": "Minimum stable pH during MBT55 fermentation",
+      "default": 7.2,
+      "evidence_source": "Observed: https://youtu.be/bVRBk0ixNjI — pH control demo"
+    },
+    "ph_stable_range_max": {
+      "type": "number",
+      "description": "Maximum stable pH during MBT55 fermentation",
+      "default": 7.5,
+      "evidence_source": "Observed: https://youtu.be/bVRBk0ixNjI — pH control demo"
+    },
+    "decomposition_rate": {
+      "type": "number",
+      "description": "Organic matter decomposition rate (fraction, 0-1)",
+      "default": 0.60,
+      "evidence_source": "■MBT55技術解説レポート — 55群構成 (>60% decomposition rate stated)"
+    },
+    "h2_accumulation_constraint": {
+      "type": "number",
+      "description": "dH2/dt must be approximately zero. Model is BROKEN if this exceeds threshold.",
+      "default": 0.0,
+      "constraint": "MUST_BE_NEAR_ZERO",
+      "evidence_source": "Physics constraint: DeepSeek M1 analysis — H2 consumed to detection limit"
+    }
+  },
+  "required": [
+    "soil_n2o_suppression_factor",
+    "enteric_ch4_reduction_factor",
+    "fermentation_time_to_humus"
+  ]
+}
