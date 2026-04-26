@@ -136,6 +136,7 @@ with col2:
 with col3:
     st.markdown("### 🔬 Why It Matters")
     st.info("**The Triple-Currency Hypercycle**")
+    
     st.markdown("| Currency | Molecule | Function |")
     st.markdown("|---|---|---|")
     st.markdown("| **Carbon** | Lactate → Butyrate | Cross-feeding hub |")
