@@ -1,0 +1,30 @@
+{
+    "_metadata": {
+        "version": "1.1.0",
+        "created": "2026-04-25T15:19:12Z",
+        "method": "Nelder-Mead(5000iter)+L-BFGS-B from initial params",
+        "evidence_source": "evidence/fermentation_24h/observed_data.csv",
+        "video_evidence": "https://youtu.be/bVRBk0ixNjI",
+        "ipcc_ref": "IPCC Tier 2 CH.10 CH.11",
+        "fit_cost_final": 0.57005269,
+        "pH_rmse": 0.2474,
+        "temp_rmse_C": 25.006,
+        "h2_constraint_satisfied": true,
+        "max_dH2_dt": 0.025153,
+        "decomposition_rate_24h": 1.0,
+        "caveat": "Single-start fit from initial params. Replace with direct metabolite CSV for full Tier 2 compliance."
+    },
+    "k1": 2.0,
+    "k2": 2.0,
+    "k3": 0.05,
+    "k4": 0.089682,
+    "k5": 0.109802,
+    "k6": 0.05,
+    "alpha": 0.95,
+    "beta": 0.1,
+    "gamma": 0.1,
+    "delta": 0.8,
+    "epsilon": 10.0,
+    "rf": 1.5,
+    "df": 0.01
+}
