@@ -136,13 +136,15 @@ with col2:
 with col3:
     st.markdown("### 🔬 Why It Matters")
     st.info("**The Triple-Currency Hypercycle**")
-    
-    st.markdown("| Currency | Molecule | Function |")
-    st.markdown("|---|---|---|")
-    st.markdown("| **Carbon** | Lactate → Butyrate | Cross-feeding hub |")
-    st.markdown("| **Electron** | H₂ (instant consumption) | Prevents putrefaction |")
-    st.markdown("| **Mineral** | Fulvic Acid | Nutrient delivery |")
-    st.markdown("")
+
+    st.info("**The Triple-Currency Hypercycle**")
+    st.markdown("""
+    | Currency | Molecule | Function |
+    |---|---|---|
+    | **Carbon** | Lactate → Butyrate | Cross-feeding hub |
+    | **Electron** | H₂ (instant consumption) | Prevents putrefaction |
+    | **Mineral** | Fulvic Acid | Nutrient delivery |
+    """) 
     st.markdown("*Proteins → amino acids. Bones → minerals. All in 24 hours. This is not composting — it's a non-equilibrium thermodynamic engine.*")
 
 st.markdown("---")
