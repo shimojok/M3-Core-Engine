@@ -286,6 +286,176 @@ with tech_col2:
 
 st.markdown("---")
 
+# ── SafetyChain™ & Phenomics Engine ──
+st.header("🔬 SafetyChain™: From Safety to Functionality")
+st.markdown("*Tracking Life, Not Death — Redefining Traceability as Metabolic Value Delivery*")
+
+safety_col1, safety_col2 = st.columns(2)
+with safety_col1:
+    st.markdown("""
+    ### ❌ Conventional Traceability
+    - Records **deterioration after harvest**
+    - Static point-in-time data
+    - Cost center (compliance)
+    - "Where did it come from?"
+    - Tracks **dead matter**
+    """)
+with safety_col2:
+    st.markdown("""
+    ### ✅ SafetyChain™
+    - Tracks **Metabolic Inertia** (life force retention)
+    - Dynamic phenomics (metabolic trajectory)
+    - Profit center (PBPE asset generation)
+    - "How will it repair your metabolism?"
+    - Tracks **living metabolism**
+    """)
+
+st.markdown("---")
+st.subheader("📊 The 4-Layer Dynamic Pricing Model")
+st.latex(r"P_{total} = P_{market} + V_{functionality} + L_{loss\_avoidance} + m_{medical\_savings} + C_{carbon}")
+
+pricing_data = {
+    "Layer": ["V (Vitality)", "L (Loss Avoidance)", "m (Medical ROI)", "C (Carbon)"],
+    "Metric": ["ATP retention rate", "Spoilage reduction", "Disease prevention value", "Sequestered CO₂e/kg"],
+    "MBT55 Advantage": ["+40% longer metabolic life", "-20% post-harvest loss", "HealthBook-linked", "2.5 kgCO₂e/kg certified"],
+}
+st.table(pd.DataFrame(pricing_data))
+
+st.markdown("---")
+st.subheader("🧬 The SafetyChain™ Phenomics Engine")
+
+st.markdown("""
+### Dynamic Phenotyping — Metabolic Intelligence (MI)
+
+SafetyChain™ implements **4-layer multi-layer phenomics** to diagnose the "quality of metabolism" driven by MBT55:
+
+| Layer | Technology | What It Tracks |
+|:---|:---|:---|
+| **A. Bio-Sense & Geo-Sense** | Soil respiration acceleration, Eh redox potential | Hypercycle "gear shift" moment, Fe/Mn reduction window |
+| **B. Metabolic Profiling** | Cascade tracking, NIR spectroscopy | Amino acid → polyphenol conversion efficiency |
+| **C. Metabolic Inertia Measurement** | ATP decay rate, Q10 Arrhenius model | "How many days functionality can be maintained" |
+| **D. Phenotype Expression Decoding** | Multispectral imaging → AI | Leaf color shifts → internal metabolic state |
+""")
+
+st.markdown("---")
+st.subheader("🤖 AI Agent Orchestra (Metabolic Intelligence)")
+
+agent_data = {
+    "Agent": ["Microbe-Agent", "Cascade-Agent", "Stability-Agent", "Inertia-Agent"],
+    "Role": [
+        "Hypercycle Tachometer",
+        "Nutrient Conversion Engine",
+        "Immune Surveillance",
+        "Freshness Decay Prediction"
+    ],
+    "Key Input": [
+        "Soil Eh, Temp, CO₂ flux",
+        "NDVI/PRI spectra, Soil N/P/K",
+        "Pathogen signals, Antioxidant enzymes",
+        "Harvest ATP, Respiration rate, Ethylene"
+    ],
+    "Key Output": [
+        "ω_cycle (24h humification rate)",
+        "Φ_functional (polyphenol density)",
+        "σ_resilience (homeostasis strength)",
+        "τ_inertia (metabolic life in days)"
+    ],
+}
+st.table(pd.DataFrame(agent_data))
+
+st.markdown("""
+### V-Index: The Unified Vitality Score
+
+$$V_{Total} = \\sqrt[3]{Functionality \\times Inertia \\times Security}$$
+
+| Component | Definition | Measurement |
+|:---|:---|:---|
+| **Functionality** | Polyphenol, flavonoid, trace mineral density | Relative to conventional (=100) |
+| **Inertia** | τ_inertia: predicted days maintaining >80% functionality | Days (e.g., 14 days = 140 points) |
+| **Security** | MBT55 biosecurity pathogen exclusion rate | 0 (risk) — 100 (complete defense) |
+""")
+
+st.info("""
+**"SafetyChain™ does not track death; it tracks Life."**
+Conventional traceability records deterioration after harvest. SafetyChain™ tracks the **metabolic inertia** 
+that MBT55 imparts from soil — and proves how it converts into **economic value (health)** in the consumer's gut.
+This is Azure's bio-governance layer.
+
+**"We don't just measure plants; we compute the future of human health from the soil up."**
+""")
+
+st.markdown("---")
+st.subheader("🔗 Agent Communication Protocol (JSON Schema)")
+
+st.markdown("""
+The 4 AI agents communicate via a standardized JSON schema across Azure Event Hubs:
+
+**① Microbe → Cascade** (Soil to Plant)
+```json
+{
+  "agent": "Microbe-Agent",
+  "payload": {
+    "hypercycle_velocity": 0.85,
+    "metabolic_currency": {
+      "lactate_pool_mg_kg": 120.5,
+      "redox_potential_eh": -150.0,
+      "electron_shuttle_activity": 0.92
+    },
+    "security_status": "Pathogen-Suppressed"
+  }
+}
+```
+
+**② Cascade → Inertia** (Plant to Logistics)
+```json
+{
+  "agent": "Cascade-Agent",
+  "payload": {
+    "polyphenol_density_index": 158.0,
+    "atp_reserves_level": 0.88,
+    "forecasted_v_score": 142
+  }
+}
+```
+
+**③ Inertia → SafetyChain™** (Logistics to Value)
+```json
+{
+  "agent": "Inertia-Agent",
+  "payload": {
+    "metabolic_inertia_days": 14.5,
+    "v_index_final": {"functionality": 158, "stability": 92, "security": 100},
+    "dynamic_pricing_premium": 0.15
+  }
+}
+```
+
+**④ SafetyChain™ → Health-Agent** (Value to HealthBook)
+```json
+{
+  "agent": "Health-Agent",
+  "payload": {
+    "predicted_scfa_production_increase": 0.22,
+    "medical_roi": {"preventive_value_usd": 45.50, "target_disease": "Type-2 Diabetes"}
+  }
+}
+```
+""")
+
+st.success("""
+### 🎯 Microsoft Research Key Message
+
+**"This is not a static supply chain, but a dynamic metabolic network."**
+
+The SafetyChain™ agent architecture provides the **missing link** in Microsoft's Biomedical AI:
+- **Physical Interface**: MBT55 controls soil Eh + lactate → boosts plant secondary metabolism
+- **Data Interface**: SafetyChain™ generates a digital twin of "metabolic inertia" on Azure → feeds HealthBook
+- **Economic Interface**: Health-Agent computes m-ROI → real-time Dynamic Impact Pricing → farmer compensation
+
+*These are the 3 interfaces Poon and Ersoy need to complete their Biomedical AI vision.*
+""")
+
+
 # ── Strategic Position ──
 st.header("🤝 Strategic Position for Microsoft Azure")
 
